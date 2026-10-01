@@ -1,5 +1,5 @@
 [README.md](https://github.com/user-attachments/files/32889010/README.md)
-# Tri-modal Breast Imaging Foundation Model — Stage 1 Pretraining
+# Omni Breast Imaging Foundation Model — Stage 1 Pretraining
 
 This repository contains the source code for Stage 1 pretraining of a tri-modal breast imaging foundation model covering **mammography, breast MRI, and breast ultrasound**.
 
