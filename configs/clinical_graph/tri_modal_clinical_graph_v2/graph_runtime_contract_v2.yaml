@@ -1,0 +1,44 @@
+schema_version: clinical_graph_v2
+allowed_statuses:
+- present
+- explicit_absent
+- not_mentioned
+- unknown
+- not_applicable
+- inferred_low_confidence
+- inferred_high_confidence
+observed_mask:
+  include_statuses:
+  - present
+  - explicit_absent
+  inferred_as_confirmed_supervision_default: false
+prompt_inclusion:
+  requires_observed_mask: true
+  allowed_statuses:
+  - present
+  - explicit_absent
+  exclude_unobserved: true
+graph_pooling_inclusion:
+  requires_observed_mask: true
+semantic_similarity_inclusion:
+  requires_observed_mask: true
+concept_supervision_inclusion:
+  allowed_statuses:
+  - present
+  - explicit_absent
+source_scope:
+- image
+- lesion
+- series
+- study
+- case
+- patient
+evidence_types:
+- structured_field
+- curated_label
+- report_text
+- manual_review
+confidence_range:
+- 0.0
+- 1.0
+missing_is_not_negative: true

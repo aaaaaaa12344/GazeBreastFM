@@ -1,0 +1,630 @@
+edge_id,source_node_id,target_node_id,relation_type,modality_scope,weight,is_hard_constraint,description
+is_a.anatomy_location.laterality.anatomy_location,anatomy_location.laterality,anatomy_location,is_a,all,1.0,true,V0 hierarchy relation.
+is_a.anatomy_location.laterality.bilateral.anatomy_location.laterality,anatomy_location.laterality.bilateral,anatomy_location.laterality,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.anatomy_location.laterality.bilateral.provenance.source.structured_field,anatomy_location.laterality.bilateral,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.anatomy_location.laterality.left.anatomy_location.laterality,anatomy_location.laterality.left,anatomy_location.laterality,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.anatomy_location.laterality.left.provenance.source.structured_field,anatomy_location.laterality.left,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.anatomy_location.laterality.right.anatomy_location.laterality,anatomy_location.laterality.right,anatomy_location.laterality,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.anatomy_location.laterality.right.provenance.source.structured_field,anatomy_location.laterality.right,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.assessment.birads.assessment,assessment.birads,assessment,is_a,all,1.0,true,V0 hierarchy relation.
+is_a.assessment.birads.0_incomplete.assessment.birads,assessment.birads.0_incomplete,assessment.birads,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads.0_incomplete.provenance.source.structured_field,assessment.birads.0_incomplete,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.assessment.birads.1_negative.assessment.birads,assessment.birads.1_negative,assessment.birads,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads.1_negative.provenance.source.structured_field,assessment.birads.1_negative,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.assessment.birads.2_benign.assessment.birads,assessment.birads.2_benign,assessment.birads,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads.2_benign.provenance.source.structured_field,assessment.birads.2_benign,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.assessment.birads.3_probably_benign.assessment.birads,assessment.birads.3_probably_benign,assessment.birads,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads.3_probably_benign.provenance.source.structured_field,assessment.birads.3_probably_benign,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.assessment.birads.4_suspicious.assessment.birads,assessment.birads.4_suspicious,assessment.birads,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads.4_suspicious.provenance.source.structured_field,assessment.birads.4_suspicious,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.assessment.birads.5_highly_suggestive_malignancy.assessment.birads,assessment.birads.5_highly_suggestive_malignancy,assessment.birads,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads.5_highly_suggestive_malignancy.provenance.source.structured_field,assessment.birads.5_highly_suggestive_malignancy,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.assessment.birads.6_known_biopsy_proven_malignancy.assessment.birads,assessment.birads.6_known_biopsy_proven_malignancy,assessment.birads,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads.6_known_biopsy_proven_malignancy.provenance.source.structured_field,assessment.birads.6_known_biopsy_proven_malignancy,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+applies_to_modality.assessment.birads_us.modality.ultrasound,assessment.birads_us,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.assessment.birads_us.assessment,assessment.birads_us,assessment,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.assessment.birads_us.1_negative.modality.ultrasound,assessment.birads_us.1_negative,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.assessment.birads_us.1_negative.assessment.birads_us,assessment.birads_us.1_negative,assessment.birads_us,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads_us.1_negative.provenance.source.structured_field,assessment.birads_us.1_negative,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.assessment.birads_us.2_benign.modality.ultrasound,assessment.birads_us.2_benign,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.assessment.birads_us.2_benign.assessment.birads_us,assessment.birads_us.2_benign,assessment.birads_us,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads_us.2_benign.provenance.source.structured_field,assessment.birads_us.2_benign,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.assessment.birads_us.3_probably_benign.modality.ultrasound,assessment.birads_us.3_probably_benign,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.assessment.birads_us.3_probably_benign.assessment.birads_us,assessment.birads_us.3_probably_benign,assessment.birads_us,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads_us.3_probably_benign.provenance.source.structured_field,assessment.birads_us.3_probably_benign,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.assessment.birads_us.4_suspicious.modality.ultrasound,assessment.birads_us.4_suspicious,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.assessment.birads_us.4_suspicious.assessment.birads_us,assessment.birads_us.4_suspicious,assessment.birads_us,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads_us.4_suspicious.provenance.source.structured_field,assessment.birads_us.4_suspicious,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.assessment.birads_us.5_highly_suggestive_malignancy.modality.ultrasound,assessment.birads_us.5_highly_suggestive_malignancy,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.assessment.birads_us.5_highly_suggestive_malignancy.assessment.birads_us,assessment.birads_us.5_highly_suggestive_malignancy,assessment.birads_us,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads_us.5_highly_suggestive_malignancy.provenance.source.structured_field,assessment.birads_us.5_highly_suggestive_malignancy,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.assessment.birads_us.6_known_malignancy.modality.ultrasound,assessment.birads_us.6_known_malignancy,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.assessment.birads_us.6_known_malignancy.assessment.birads_us,assessment.birads_us.6_known_malignancy,assessment.birads_us,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.assessment.birads_us.6_known_malignancy.provenance.source.structured_field,assessment.birads_us.6_known_malignancy,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.modality.mammography,mammography,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+applies_to_modality.mammography.calcification.modality.mammography,mammography.calcification,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.mammography,mammography.calcification,mammography,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.calcification.distribution.modality.mammography,mammography.calcification.distribution,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.distribution.mammography.calcification,mammography.calcification.distribution,mammography.calcification,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.calcification.distribution.diffuse.modality.mammography,mammography.calcification.distribution.diffuse,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.distribution.diffuse.mammography.calcification.distribution,mammography.calcification.distribution.diffuse,mammography.calcification.distribution,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.distribution.diffuse.provenance.source.structured_field,mammography.calcification.distribution.diffuse,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.distribution.grouped.modality.mammography,mammography.calcification.distribution.grouped,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.distribution.grouped.mammography.calcification.distribution,mammography.calcification.distribution.grouped,mammography.calcification.distribution,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.distribution.grouped.provenance.source.structured_field,mammography.calcification.distribution.grouped,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.distribution.linear.modality.mammography,mammography.calcification.distribution.linear,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.distribution.linear.mammography.calcification.distribution,mammography.calcification.distribution.linear,mammography.calcification.distribution,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.distribution.linear.provenance.source.structured_field,mammography.calcification.distribution.linear,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.distribution.regional.modality.mammography,mammography.calcification.distribution.regional,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.distribution.regional.mammography.calcification.distribution,mammography.calcification.distribution.regional,mammography.calcification.distribution,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.distribution.regional.provenance.source.structured_field,mammography.calcification.distribution.regional,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.distribution.segmental.modality.mammography,mammography.calcification.distribution.segmental,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.distribution.segmental.mammography.calcification.distribution,mammography.calcification.distribution.segmental,mammography.calcification.distribution,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.distribution.segmental.provenance.source.structured_field,mammography.calcification.distribution.segmental,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.morphology.modality.mammography,mammography.calcification.morphology,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.morphology.mammography.calcification,mammography.calcification.morphology,mammography.calcification,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.calcification.morphology.amorphous.modality.mammography,mammography.calcification.morphology.amorphous,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.morphology.amorphous.mammography.calcification.morphology,mammography.calcification.morphology.amorphous,mammography.calcification.morphology,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.morphology.amorphous.provenance.source.structured_field,mammography.calcification.morphology.amorphous,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.morphology.coarse_heterogeneous.modality.mammography,mammography.calcification.morphology.coarse_heterogeneous,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.morphology.coarse_heterogeneous.mammography.calcification.morphology,mammography.calcification.morphology.coarse_heterogeneous,mammography.calcification.morphology,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.morphology.coarse_heterogeneous.provenance.source.structured_field,mammography.calcification.morphology.coarse_heterogeneous,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.morphology.fine_linear_branching.modality.mammography,mammography.calcification.morphology.fine_linear_branching,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.morphology.fine_linear_branching.mammography.calcification.morphology,mammography.calcification.morphology.fine_linear_branching,mammography.calcification.morphology,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.morphology.fine_linear_branching.provenance.source.structured_field,mammography.calcification.morphology.fine_linear_branching,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.morphology.fine_pleomorphic.modality.mammography,mammography.calcification.morphology.fine_pleomorphic,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.morphology.fine_pleomorphic.mammography.calcification.morphology,mammography.calcification.morphology.fine_pleomorphic,mammography.calcification.morphology,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.morphology.fine_pleomorphic.provenance.source.structured_field,mammography.calcification.morphology.fine_pleomorphic,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.calcification.morphology.typically_benign.modality.mammography,mammography.calcification.morphology.typically_benign,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.calcification.morphology.typically_benign.mammography.calcification.morphology,mammography.calcification.morphology.typically_benign,mammography.calcification.morphology,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.calcification.morphology.typically_benign.provenance.source.structured_field,mammography.calcification.morphology.typically_benign,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.density.modality.mammography,mammography.density,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.density.mammography,mammography.density,mammography,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.density.a_almost_entirely_fatty.modality.mammography,mammography.density.a_almost_entirely_fatty,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.density.a_almost_entirely_fatty.mammography.density,mammography.density.a_almost_entirely_fatty,mammography.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.density.a_almost_entirely_fatty.provenance.source.structured_field,mammography.density.a_almost_entirely_fatty,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.density.b_scattered_fibroglandular.modality.mammography,mammography.density.b_scattered_fibroglandular,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.density.b_scattered_fibroglandular.mammography.density,mammography.density.b_scattered_fibroglandular,mammography.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.density.b_scattered_fibroglandular.provenance.source.structured_field,mammography.density.b_scattered_fibroglandular,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.density.c_heterogeneously_dense.modality.mammography,mammography.density.c_heterogeneously_dense,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.density.c_heterogeneously_dense.mammography.density,mammography.density.c_heterogeneously_dense,mammography.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.density.c_heterogeneously_dense.provenance.source.structured_field,mammography.density.c_heterogeneously_dense,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.density.d_extremely_dense.modality.mammography,mammography.density.d_extremely_dense,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.density.d_extremely_dense.mammography.density,mammography.density.d_extremely_dense,mammography.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.density.d_extremely_dense.provenance.source.structured_field,mammography.density.d_extremely_dense,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.modality.mammography,mammography.finding,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.mammography,mammography.finding,mammography,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.finding.architectural_distortion.modality.mammography,mammography.finding.architectural_distortion,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.architectural_distortion.mammography.finding,mammography.finding.architectural_distortion,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.architectural_distortion.provenance.source.structured_field,mammography.finding.architectural_distortion,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.asymmetry.modality.mammography,mammography.finding.asymmetry,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.asymmetry.mammography.finding,mammography.finding.asymmetry,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.asymmetry.provenance.source.structured_field,mammography.finding.asymmetry,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.axillary_lymph_node.modality.mammography,mammography.finding.axillary_lymph_node,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.axillary_lymph_node.mammography.finding,mammography.finding.axillary_lymph_node,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.axillary_lymph_node.provenance.source.structured_field,mammography.finding.axillary_lymph_node,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.calcification.modality.mammography,mammography.finding.calcification,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.calcification.mammography.finding,mammography.finding.calcification,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.calcification.provenance.source.structured_field,mammography.finding.calcification,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.developing_asymmetry.modality.mammography,mammography.finding.developing_asymmetry,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.developing_asymmetry.mammography.finding,mammography.finding.developing_asymmetry,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.developing_asymmetry.provenance.source.structured_field,mammography.finding.developing_asymmetry,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.focal_asymmetry.modality.mammography,mammography.finding.focal_asymmetry,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.focal_asymmetry.mammography.finding,mammography.finding.focal_asymmetry,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.focal_asymmetry.provenance.source.structured_field,mammography.finding.focal_asymmetry,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.global_asymmetry.modality.mammography,mammography.finding.global_asymmetry,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.global_asymmetry.mammography.finding,mammography.finding.global_asymmetry,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.global_asymmetry.provenance.source.structured_field,mammography.finding.global_asymmetry,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.mass.modality.mammography,mammography.finding.mass,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+has_attribute.mammography.finding.mass.mammography.mass.density.equal,mammography.finding.mass,mammography.mass.density.equal,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.density.fat_containing,mammography.finding.mass,mammography.mass.density.fat_containing,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.density.high,mammography.finding.mass,mammography.mass.density.high,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.density.low,mammography.finding.mass,mammography.mass.density.low,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.margin.circumscribed,mammography.finding.mass,mammography.mass.margin.circumscribed,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.margin.indistinct,mammography.finding.mass,mammography.mass.margin.indistinct,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.margin.microlobulated,mammography.finding.mass,mammography.mass.margin.microlobulated,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.margin.obscured,mammography.finding.mass,mammography.mass.margin.obscured,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.margin.spiculated,mammography.finding.mass,mammography.mass.margin.spiculated,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.shape.irregular,mammography.finding.mass,mammography.mass.shape.irregular,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.shape.oval,mammography.finding.mass,mammography.mass.shape.oval,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+has_attribute.mammography.finding.mass.mammography.mass.shape.round,mammography.finding.mass,mammography.mass.shape.round,has_attribute,mammography,1.0,true,V0 finding attribute relation.
+is_a.mammography.finding.mass.mammography.finding,mammography.finding.mass,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+maps_to_shared_concept.mammography.finding.mass.shared.finding.mass,mammography.finding.mass,shared.finding.mass,maps_to_shared_concept,mammography,1.0,true,V0 shared mass relation.
+observed_from.mammography.finding.mass.provenance.source.structured_field,mammography.finding.mass,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.nipple_retraction.modality.mammography,mammography.finding.nipple_retraction,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.nipple_retraction.mammography.finding,mammography.finding.nipple_retraction,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.nipple_retraction.provenance.source.structured_field,mammography.finding.nipple_retraction,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.no_suspicious_finding.modality.mammography,mammography.finding.no_suspicious_finding,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.no_suspicious_finding.mammography.finding,mammography.finding.no_suspicious_finding,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.no_suspicious_finding.provenance.source.structured_field,mammography.finding.no_suspicious_finding,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.finding.skin_thickening.modality.mammography,mammography.finding.skin_thickening,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.finding.skin_thickening.mammography.finding,mammography.finding.skin_thickening,mammography.finding,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.finding.skin_thickening.provenance.source.structured_field,mammography.finding.skin_thickening,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.laterality.modality.mammography,mammography.laterality,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.laterality.mammography,mammography.laterality,mammography,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.laterality.left.modality.mammography,mammography.laterality.left,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.laterality.left.mammography.laterality,mammography.laterality.left,mammography.laterality,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.laterality.left.provenance.source.structured_field,mammography.laterality.left,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.laterality.right.modality.mammography,mammography.laterality.right,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.laterality.right.mammography.laterality,mammography.laterality.right,mammography.laterality,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.laterality.right.provenance.source.structured_field,mammography.laterality.right,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.modality.mammography,mammography.mass,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.mammography,mammography.mass,mammography,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.mass.density.modality.mammography,mammography.mass.density,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.density.mammography.mass,mammography.mass.density,mammography.mass,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.mass.density.equal.modality.mammography,mammography.mass.density.equal,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.density.equal.mammography.mass.density,mammography.mass.density.equal,mammography.mass.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.density.equal.provenance.source.structured_field,mammography.mass.density.equal,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.density.fat_containing.modality.mammography,mammography.mass.density.fat_containing,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+implies.mammography.mass.density.fat_containing.risk.benign_likely,mammography.mass.density.fat_containing,risk.benign_likely,implies,mammography,1.0,true,V0 explicit decreases-risk example.
+is_a.mammography.mass.density.fat_containing.mammography.mass.density,mammography.mass.density.fat_containing,mammography.mass.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.density.fat_containing.provenance.source.structured_field,mammography.mass.density.fat_containing,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.density.high.modality.mammography,mammography.mass.density.high,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.density.high.mammography.mass.density,mammography.mass.density.high,mammography.mass.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.density.high.provenance.source.structured_field,mammography.mass.density.high,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.density.low.modality.mammography,mammography.mass.density.low,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.density.low.mammography.mass.density,mammography.mass.density.low,mammography.mass.density,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.density.low.provenance.source.structured_field,mammography.mass.density.low,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.margin.modality.mammography,mammography.mass.margin,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.margin.mammography.mass,mammography.mass.margin,mammography.mass,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.mass.margin.circumscribed.modality.mammography,mammography.mass.margin.circumscribed,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.margin.circumscribed.mammography.mass.margin,mammography.mass.margin.circumscribed,mammography.mass.margin,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.margin.circumscribed.provenance.source.structured_field,mammography.mass.margin.circumscribed,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.margin.indistinct.modality.mammography,mammography.mass.margin.indistinct,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.margin.indistinct.mammography.mass.margin,mammography.mass.margin.indistinct,mammography.mass.margin,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.margin.indistinct.provenance.source.structured_field,mammography.mass.margin.indistinct,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.margin.microlobulated.modality.mammography,mammography.mass.margin.microlobulated,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.margin.microlobulated.mammography.mass.margin,mammography.mass.margin.microlobulated,mammography.mass.margin,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.margin.microlobulated.provenance.source.structured_field,mammography.mass.margin.microlobulated,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.margin.obscured.modality.mammography,mammography.mass.margin.obscured,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.margin.obscured.mammography.mass.margin,mammography.mass.margin.obscured,mammography.mass.margin,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.margin.obscured.provenance.source.structured_field,mammography.mass.margin.obscured,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.margin.spiculated.modality.mammography,mammography.mass.margin.spiculated,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.margin.spiculated.mammography.mass.margin,mammography.mass.margin.spiculated,mammography.mass.margin,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.margin.spiculated.provenance.source.structured_field,mammography.mass.margin.spiculated,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.shape.modality.mammography,mammography.mass.shape,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.shape.mammography.mass,mammography.mass.shape,mammography.mass,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.mass.shape.irregular.modality.mammography,mammography.mass.shape.irregular,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.shape.irregular.mammography.mass.shape,mammography.mass.shape.irregular,mammography.mass.shape,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.shape.irregular.provenance.source.structured_field,mammography.mass.shape.irregular,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.shape.oval.modality.mammography,mammography.mass.shape.oval,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.shape.oval.mammography.mass.shape,mammography.mass.shape.oval,mammography.mass.shape,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.shape.oval.provenance.source.structured_field,mammography.mass.shape.oval,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.mass.shape.round.modality.mammography,mammography.mass.shape.round,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.mass.shape.round.mammography.mass.shape,mammography.mass.shape.round,mammography.mass.shape,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.mass.shape.round.provenance.source.structured_field,mammography.mass.shape.round,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.view.modality.mammography,mammography.view,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.view.mammography,mammography.view,mammography,is_a,mammography,1.0,true,V0 hierarchy relation.
+applies_to_modality.mammography.view.cc.modality.mammography,mammography.view.cc,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.view.cc.mammography.view,mammography.view.cc,mammography.view,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.view.cc.provenance.source.structured_field,mammography.view.cc,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.view.lm.modality.mammography,mammography.view.lm,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.view.lm.mammography.view,mammography.view.lm,mammography.view,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.view.lm.provenance.source.structured_field,mammography.view.lm,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.view.ml.modality.mammography,mammography.view.ml,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.view.ml.mammography.view,mammography.view.ml,mammography.view,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.view.ml.provenance.source.structured_field,mammography.view.ml,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mammography.view.mlo.modality.mammography,mammography.view.mlo,modality.mammography,applies_to_modality,mammography,1.0,true,V0 modality applicability.
+is_a.mammography.view.mlo.mammography.view,mammography.view.mlo,mammography.view,is_a,mammography,1.0,true,V0 hierarchy relation.
+observed_from.mammography.view.mlo.provenance.source.structured_field,mammography.view.mlo,provenance.source.structured_field,observed_from,mammography,1.0,true,V0 observed-from structured field example.
+is_a.modality.mammography.modality,modality.mammography,modality,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.modality.mammography.provenance.source.structured_field,modality.mammography,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.modality.mri.modality,modality.mri,modality,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.modality.mri.provenance.source.structured_field,modality.mri,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+is_a.modality.ultrasound.modality,modality.ultrasound,modality,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.modality.ultrasound.provenance.source.structured_field,modality.ultrasound,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.modality.mri,mri,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+applies_to_modality.mri.adc.modality.mri,mri.adc,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.adc.mri,mri.adc,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.adc.high.modality.mri,mri.adc.high,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.adc.high.mri.adc,mri.adc.high,mri.adc,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.adc.high.provenance.source.structured_field,mri.adc.high,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.adc.intermediate.modality.mri,mri.adc.intermediate,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.adc.intermediate.mri.adc,mri.adc.intermediate,mri.adc,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.adc.intermediate.provenance.source.structured_field,mri.adc.intermediate,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.adc.low.modality.mri,mri.adc.low,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.adc.low.mri.adc,mri.adc.low,mri.adc,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.adc.low.provenance.source.structured_field,mri.adc.low,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.background.modality.mri,mri.background,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.background.mri,mri.background,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.background.fibroglandular_tissue.modality.mri,mri.background.fibroglandular_tissue,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.background.fibroglandular_tissue.mri.background,mri.background.fibroglandular_tissue,mri.background,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.background.fibroglandular_tissue.extreme.modality.mri,mri.background.fibroglandular_tissue.extreme,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.background.fibroglandular_tissue.extreme.mri.background.fibroglandular_tissue,mri.background.fibroglandular_tissue.extreme,mri.background.fibroglandular_tissue,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.background.fibroglandular_tissue.extreme.provenance.source.structured_field,mri.background.fibroglandular_tissue.extreme,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.background.fibroglandular_tissue.fatty.modality.mri,mri.background.fibroglandular_tissue.fatty,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.background.fibroglandular_tissue.fatty.mri.background.fibroglandular_tissue,mri.background.fibroglandular_tissue.fatty,mri.background.fibroglandular_tissue,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.background.fibroglandular_tissue.fatty.provenance.source.structured_field,mri.background.fibroglandular_tissue.fatty,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.background.fibroglandular_tissue.heterogeneous.modality.mri,mri.background.fibroglandular_tissue.heterogeneous,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.background.fibroglandular_tissue.heterogeneous.mri.background.fibroglandular_tissue,mri.background.fibroglandular_tissue.heterogeneous,mri.background.fibroglandular_tissue,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.background.fibroglandular_tissue.heterogeneous.provenance.source.structured_field,mri.background.fibroglandular_tissue.heterogeneous,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.background.fibroglandular_tissue.scattered.modality.mri,mri.background.fibroglandular_tissue.scattered,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.background.fibroglandular_tissue.scattered.mri.background.fibroglandular_tissue,mri.background.fibroglandular_tissue.scattered,mri.background.fibroglandular_tissue,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.background.fibroglandular_tissue.scattered.provenance.source.structured_field,mri.background.fibroglandular_tissue.scattered,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.bpe.modality.mri,mri.bpe,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.bpe.mri,mri.bpe,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.bpe.marked.modality.mri,mri.bpe.marked,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.bpe.marked.mri.bpe,mri.bpe.marked,mri.bpe,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.bpe.marked.provenance.source.structured_field,mri.bpe.marked,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.bpe.mild.modality.mri,mri.bpe.mild,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.bpe.mild.mri.bpe,mri.bpe.mild,mri.bpe,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.bpe.mild.provenance.source.structured_field,mri.bpe.mild,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.bpe.minimal.modality.mri,mri.bpe.minimal,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.bpe.minimal.mri.bpe,mri.bpe.minimal,mri.bpe,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.bpe.minimal.provenance.source.structured_field,mri.bpe.minimal,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.bpe.moderate.modality.mri,mri.bpe.moderate,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.bpe.moderate.mri.bpe,mri.bpe.moderate,mri.bpe,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.bpe.moderate.provenance.source.structured_field,mri.bpe.moderate,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.dwi.modality.mri,mri.dwi,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.dwi.mri,mri.dwi,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.dwi.restricted_diffusion.modality.mri,mri.dwi.restricted_diffusion,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.dwi.restricted_diffusion.mri.dwi,mri.dwi.restricted_diffusion,mri.dwi,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.dwi.restricted_diffusion.absent.modality.mri,mri.dwi.restricted_diffusion.absent,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.dwi.restricted_diffusion.absent.mri.dwi.restricted_diffusion,mri.dwi.restricted_diffusion.absent,mri.dwi.restricted_diffusion,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.dwi.restricted_diffusion.absent.provenance.source.structured_field,mri.dwi.restricted_diffusion.absent,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.dwi.restricted_diffusion.present.modality.mri,mri.dwi.restricted_diffusion.present,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.dwi.restricted_diffusion.present.mri.dwi.restricted_diffusion,mri.dwi.restricted_diffusion.present,mri.dwi.restricted_diffusion,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.dwi.restricted_diffusion.present.provenance.source.structured_field,mri.dwi.restricted_diffusion.present,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.finding.modality.mri,mri.finding,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.finding.mri,mri.finding,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.finding.bilateral_disease.modality.mri,mri.finding.bilateral_disease,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.finding.bilateral_disease.mri.finding,mri.finding.bilateral_disease,mri.finding,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.finding.bilateral_disease.provenance.source.structured_field,mri.finding.bilateral_disease,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.finding.focus.modality.mri,mri.finding.focus,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.finding.focus.mri.finding,mri.finding.focus,mri.finding,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.finding.focus.provenance.source.structured_field,mri.finding.focus,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.finding.mass.modality.mri,mri.finding.mass,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+has_attribute.mri.finding.mass.mri.internal_enhancement.dark_internal_septations,mri.finding.mass,mri.internal_enhancement.dark_internal_septations,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.internal_enhancement.heterogeneous,mri.finding.mass,mri.internal_enhancement.heterogeneous,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.internal_enhancement.homogeneous,mri.finding.mass,mri.internal_enhancement.homogeneous,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.internal_enhancement.rim,mri.finding.mass,mri.internal_enhancement.rim,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.kinetic.delayed.persistent,mri.finding.mass,mri.kinetic.delayed.persistent,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.kinetic.delayed.plateau,mri.finding.mass,mri.kinetic.delayed.plateau,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.kinetic.delayed.washout,mri.finding.mass,mri.kinetic.delayed.washout,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.kinetic.initial.fast,mri.finding.mass,mri.kinetic.initial.fast,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.kinetic.initial.medium,mri.finding.mass,mri.kinetic.initial.medium,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.kinetic.initial.slow,mri.finding.mass,mri.kinetic.initial.slow,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.mass.margin.circumscribed,mri.finding.mass,mri.mass.margin.circumscribed,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.mass.margin.irregular,mri.finding.mass,mri.mass.margin.irregular,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.mass.margin.spiculated,mri.finding.mass,mri.mass.margin.spiculated,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.mass.shape.irregular,mri.finding.mass,mri.mass.shape.irregular,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.mass.shape.oval,mri.finding.mass,mri.mass.shape.oval,has_attribute,mri,1.0,true,V0 finding attribute relation.
+has_attribute.mri.finding.mass.mri.mass.shape.round,mri.finding.mass,mri.mass.shape.round,has_attribute,mri,1.0,true,V0 finding attribute relation.
+is_a.mri.finding.mass.mri.finding,mri.finding.mass,mri.finding,is_a,mri,1.0,true,V0 hierarchy relation.
+maps_to_shared_concept.mri.finding.mass.shared.finding.mass,mri.finding.mass,shared.finding.mass,maps_to_shared_concept,mri,1.0,true,V0 shared mass relation.
+observed_from.mri.finding.mass.provenance.source.structured_field,mri.finding.mass,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.finding.multicentric_disease.modality.mri,mri.finding.multicentric_disease,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.finding.multicentric_disease.mri.finding,mri.finding.multicentric_disease,mri.finding,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.finding.multicentric_disease.provenance.source.structured_field,mri.finding.multicentric_disease,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.finding.multifocal_disease.modality.mri,mri.finding.multifocal_disease,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.finding.multifocal_disease.mri.finding,mri.finding.multifocal_disease,mri.finding,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.finding.multifocal_disease.provenance.source.structured_field,mri.finding.multifocal_disease,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.finding.no_suspicious_enhancement.modality.mri,mri.finding.no_suspicious_enhancement,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.finding.no_suspicious_enhancement.mri.finding,mri.finding.no_suspicious_enhancement,mri.finding,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.finding.no_suspicious_enhancement.provenance.source.structured_field,mri.finding.no_suspicious_enhancement,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.finding.non_mass_enhancement.modality.mri,mri.finding.non_mass_enhancement,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.finding.non_mass_enhancement.mri.finding,mri.finding.non_mass_enhancement,mri.finding,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.finding.non_mass_enhancement.provenance.source.structured_field,mri.finding.non_mass_enhancement,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.internal_enhancement.modality.mri,mri.internal_enhancement,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.internal_enhancement.mri,mri.internal_enhancement,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.internal_enhancement.dark_internal_septations.modality.mri,mri.internal_enhancement.dark_internal_septations,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.internal_enhancement.dark_internal_septations.mri.internal_enhancement,mri.internal_enhancement.dark_internal_septations,mri.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.internal_enhancement.dark_internal_septations.provenance.source.structured_field,mri.internal_enhancement.dark_internal_septations,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.internal_enhancement.heterogeneous.modality.mri,mri.internal_enhancement.heterogeneous,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.internal_enhancement.heterogeneous.mri.internal_enhancement,mri.internal_enhancement.heterogeneous,mri.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.internal_enhancement.heterogeneous.provenance.source.structured_field,mri.internal_enhancement.heterogeneous,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.internal_enhancement.homogeneous.modality.mri,mri.internal_enhancement.homogeneous,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.internal_enhancement.homogeneous.mri.internal_enhancement,mri.internal_enhancement.homogeneous,mri.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.internal_enhancement.homogeneous.provenance.source.structured_field,mri.internal_enhancement.homogeneous,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.internal_enhancement.rim.modality.mri,mri.internal_enhancement.rim,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.internal_enhancement.rim.mri.internal_enhancement,mri.internal_enhancement.rim,mri.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.internal_enhancement.rim.provenance.source.structured_field,mri.internal_enhancement.rim,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.kinetic.modality.mri,mri.kinetic,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.kinetic.mri,mri.kinetic,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.kinetic.delayed.modality.mri,mri.kinetic.delayed,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.kinetic.delayed.mri.kinetic,mri.kinetic.delayed,mri.kinetic,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.kinetic.delayed.persistent.modality.mri,mri.kinetic.delayed.persistent,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+conflicts_with.mri.kinetic.delayed.persistent.mri.kinetic.delayed.plateau,mri.kinetic.delayed.persistent,mri.kinetic.delayed.plateau,conflicts_with,mri,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.mri.kinetic.delayed.persistent.mri.kinetic.delayed.washout,mri.kinetic.delayed.persistent,mri.kinetic.delayed.washout,conflicts_with,mri,1.0,true,V0 mutually exclusive attribute/risk axis.
+is_a.mri.kinetic.delayed.persistent.mri.kinetic.delayed,mri.kinetic.delayed.persistent,mri.kinetic.delayed,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.kinetic.delayed.persistent.provenance.source.structured_field,mri.kinetic.delayed.persistent,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.kinetic.delayed.plateau.modality.mri,mri.kinetic.delayed.plateau,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+conflicts_with.mri.kinetic.delayed.plateau.mri.kinetic.delayed.persistent,mri.kinetic.delayed.plateau,mri.kinetic.delayed.persistent,conflicts_with,mri,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.mri.kinetic.delayed.plateau.mri.kinetic.delayed.washout,mri.kinetic.delayed.plateau,mri.kinetic.delayed.washout,conflicts_with,mri,1.0,true,V0 mutually exclusive attribute/risk axis.
+is_a.mri.kinetic.delayed.plateau.mri.kinetic.delayed,mri.kinetic.delayed.plateau,mri.kinetic.delayed,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.kinetic.delayed.plateau.provenance.source.structured_field,mri.kinetic.delayed.plateau,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.kinetic.delayed.washout.modality.mri,mri.kinetic.delayed.washout,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+conflicts_with.mri.kinetic.delayed.washout.mri.kinetic.delayed.persistent,mri.kinetic.delayed.washout,mri.kinetic.delayed.persistent,conflicts_with,mri,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.mri.kinetic.delayed.washout.mri.kinetic.delayed.plateau,mri.kinetic.delayed.washout,mri.kinetic.delayed.plateau,conflicts_with,mri,1.0,true,V0 mutually exclusive relation; symmetric direction.
+implies.mri.kinetic.delayed.washout.risk.suspicious,mri.kinetic.delayed.washout,risk.suspicious,implies,mri,1.0,true,V0 explicit increases-risk example.
+is_a.mri.kinetic.delayed.washout.mri.kinetic.delayed,mri.kinetic.delayed.washout,mri.kinetic.delayed,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.kinetic.delayed.washout.provenance.source.structured_field,mri.kinetic.delayed.washout,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.kinetic.initial.modality.mri,mri.kinetic.initial,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.kinetic.initial.mri.kinetic,mri.kinetic.initial,mri.kinetic,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.kinetic.initial.fast.modality.mri,mri.kinetic.initial.fast,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.kinetic.initial.fast.mri.kinetic.initial,mri.kinetic.initial.fast,mri.kinetic.initial,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.kinetic.initial.fast.provenance.source.structured_field,mri.kinetic.initial.fast,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.kinetic.initial.medium.modality.mri,mri.kinetic.initial.medium,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.kinetic.initial.medium.mri.kinetic.initial,mri.kinetic.initial.medium,mri.kinetic.initial,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.kinetic.initial.medium.provenance.source.structured_field,mri.kinetic.initial.medium,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.kinetic.initial.slow.modality.mri,mri.kinetic.initial.slow,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.kinetic.initial.slow.mri.kinetic.initial,mri.kinetic.initial.slow,mri.kinetic.initial,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.kinetic.initial.slow.provenance.source.structured_field,mri.kinetic.initial.slow,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.mass.modality.mri,mri.mass,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.mri,mri.mass,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.mass.margin.modality.mri,mri.mass.margin,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.margin.mri.mass,mri.mass.margin,mri.mass,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.mass.margin.circumscribed.modality.mri,mri.mass.margin.circumscribed,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.margin.circumscribed.mri.mass.margin,mri.mass.margin.circumscribed,mri.mass.margin,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.mass.margin.circumscribed.provenance.source.structured_field,mri.mass.margin.circumscribed,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.mass.margin.irregular.modality.mri,mri.mass.margin.irregular,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.margin.irregular.mri.mass.margin,mri.mass.margin.irregular,mri.mass.margin,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.mass.margin.irregular.provenance.source.structured_field,mri.mass.margin.irregular,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.mass.margin.spiculated.modality.mri,mri.mass.margin.spiculated,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.margin.spiculated.mri.mass.margin,mri.mass.margin.spiculated,mri.mass.margin,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.mass.margin.spiculated.provenance.source.structured_field,mri.mass.margin.spiculated,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.mass.shape.modality.mri,mri.mass.shape,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.shape.mri.mass,mri.mass.shape,mri.mass,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.mass.shape.irregular.modality.mri,mri.mass.shape.irregular,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.shape.irregular.mri.mass.shape,mri.mass.shape.irregular,mri.mass.shape,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.mass.shape.irregular.provenance.source.structured_field,mri.mass.shape.irregular,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.mass.shape.oval.modality.mri,mri.mass.shape.oval,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.shape.oval.mri.mass.shape,mri.mass.shape.oval,mri.mass.shape,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.mass.shape.oval.provenance.source.structured_field,mri.mass.shape.oval,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.mass.shape.round.modality.mri,mri.mass.shape.round,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.mass.shape.round.mri.mass.shape,mri.mass.shape.round,mri.mass.shape,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.mass.shape.round.provenance.source.structured_field,mri.mass.shape.round,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.modality.mri,mri.nme,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.mri,mri.nme,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.nme.distribution.modality.mri,mri.nme.distribution,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.distribution.mri.nme,mri.nme.distribution,mri.nme,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.nme.distribution.diffuse.modality.mri,mri.nme.distribution.diffuse,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.distribution.diffuse.mri.nme.distribution,mri.nme.distribution.diffuse,mri.nme.distribution,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.distribution.diffuse.provenance.source.structured_field,mri.nme.distribution.diffuse,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.distribution.focal.modality.mri,mri.nme.distribution.focal,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.distribution.focal.mri.nme.distribution,mri.nme.distribution.focal,mri.nme.distribution,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.distribution.focal.provenance.source.structured_field,mri.nme.distribution.focal,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.distribution.linear.modality.mri,mri.nme.distribution.linear,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.distribution.linear.mri.nme.distribution,mri.nme.distribution.linear,mri.nme.distribution,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.distribution.linear.provenance.source.structured_field,mri.nme.distribution.linear,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.distribution.multiple_regions.modality.mri,mri.nme.distribution.multiple_regions,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.distribution.multiple_regions.mri.nme.distribution,mri.nme.distribution.multiple_regions,mri.nme.distribution,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.distribution.multiple_regions.provenance.source.structured_field,mri.nme.distribution.multiple_regions,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.distribution.regional.modality.mri,mri.nme.distribution.regional,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.distribution.regional.mri.nme.distribution,mri.nme.distribution.regional,mri.nme.distribution,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.distribution.regional.provenance.source.structured_field,mri.nme.distribution.regional,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.distribution.segmental.modality.mri,mri.nme.distribution.segmental,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.distribution.segmental.mri.nme.distribution,mri.nme.distribution.segmental,mri.nme.distribution,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.distribution.segmental.provenance.source.structured_field,mri.nme.distribution.segmental,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.internal_enhancement.modality.mri,mri.nme.internal_enhancement,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.internal_enhancement.mri.nme,mri.nme.internal_enhancement,mri.nme,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.nme.internal_enhancement.clumped.modality.mri,mri.nme.internal_enhancement.clumped,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.internal_enhancement.clumped.mri.nme.internal_enhancement,mri.nme.internal_enhancement.clumped,mri.nme.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.internal_enhancement.clumped.provenance.source.structured_field,mri.nme.internal_enhancement.clumped,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.internal_enhancement.clustered_ring.modality.mri,mri.nme.internal_enhancement.clustered_ring,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.internal_enhancement.clustered_ring.mri.nme.internal_enhancement,mri.nme.internal_enhancement.clustered_ring,mri.nme.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.internal_enhancement.clustered_ring.provenance.source.structured_field,mri.nme.internal_enhancement.clustered_ring,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.internal_enhancement.heterogeneous.modality.mri,mri.nme.internal_enhancement.heterogeneous,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.internal_enhancement.heterogeneous.mri.nme.internal_enhancement,mri.nme.internal_enhancement.heterogeneous,mri.nme.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.internal_enhancement.heterogeneous.provenance.source.structured_field,mri.nme.internal_enhancement.heterogeneous,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.nme.internal_enhancement.homogeneous.modality.mri,mri.nme.internal_enhancement.homogeneous,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.nme.internal_enhancement.homogeneous.mri.nme.internal_enhancement,mri.nme.internal_enhancement.homogeneous,mri.nme.internal_enhancement,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.nme.internal_enhancement.homogeneous.provenance.source.structured_field,mri.nme.internal_enhancement.homogeneous,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.modality.mri,mri.sequence,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.mri,mri.sequence,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.sequence.adc.modality.mri,mri.sequence.adc,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.adc.mri.sequence,mri.sequence.adc,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.adc.provenance.source.structured_field,mri.sequence.adc,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.dce.modality.mri,mri.sequence.dce,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.dce.mri.sequence,mri.sequence.dce,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.dce.provenance.source.structured_field,mri.sequence.dce,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.dwi.modality.mri,mri.sequence.dwi,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.dwi.mri.sequence,mri.sequence.dwi,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.dwi.provenance.source.structured_field,mri.sequence.dwi,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.post_contrast_phase_delayed.modality.mri,mri.sequence.post_contrast_phase_delayed,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.post_contrast_phase_delayed.mri.sequence,mri.sequence.post_contrast_phase_delayed,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.post_contrast_phase_delayed.provenance.source.structured_field,mri.sequence.post_contrast_phase_delayed,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.post_contrast_phase_early.modality.mri,mri.sequence.post_contrast_phase_early,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.post_contrast_phase_early.mri.sequence,mri.sequence.post_contrast_phase_early,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.post_contrast_phase_early.provenance.source.structured_field,mri.sequence.post_contrast_phase_early,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.subtraction.modality.mri,mri.sequence.subtraction,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.subtraction.mri.sequence,mri.sequence.subtraction,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.subtraction.provenance.source.structured_field,mri.sequence.subtraction,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.t1.modality.mri,mri.sequence.t1,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.t1.mri.sequence,mri.sequence.t1,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.t1.provenance.source.structured_field,mri.sequence.t1,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.sequence.t2.modality.mri,mri.sequence.t2,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.sequence.t2.mri.sequence,mri.sequence.t2,mri.sequence,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.sequence.t2.provenance.source.structured_field,mri.sequence.t2,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.treatment_response.modality.mri,mri.treatment_response,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.treatment_response.mri,mri.treatment_response,mri,is_a,mri,1.0,true,V0 hierarchy relation.
+applies_to_modality.mri.treatment_response.complete_response.modality.mri,mri.treatment_response.complete_response,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.treatment_response.complete_response.mri.treatment_response,mri.treatment_response.complete_response,mri.treatment_response,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.treatment_response.complete_response.provenance.source.structured_field,mri.treatment_response.complete_response,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.treatment_response.partial_response.modality.mri,mri.treatment_response.partial_response,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.treatment_response.partial_response.mri.treatment_response,mri.treatment_response.partial_response,mri.treatment_response,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.treatment_response.partial_response.provenance.source.structured_field,mri.treatment_response.partial_response,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.treatment_response.progressive_disease.modality.mri,mri.treatment_response.progressive_disease,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.treatment_response.progressive_disease.mri.treatment_response,mri.treatment_response.progressive_disease,mri.treatment_response,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.treatment_response.progressive_disease.provenance.source.structured_field,mri.treatment_response.progressive_disease,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.treatment_response.residual_enhancing_disease.modality.mri,mri.treatment_response.residual_enhancing_disease,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.treatment_response.residual_enhancing_disease.mri.treatment_response,mri.treatment_response.residual_enhancing_disease,mri.treatment_response,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.treatment_response.residual_enhancing_disease.provenance.source.structured_field,mri.treatment_response.residual_enhancing_disease,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+applies_to_modality.mri.treatment_response.stable_disease.modality.mri,mri.treatment_response.stable_disease,modality.mri,applies_to_modality,mri,1.0,true,V0 modality applicability.
+is_a.mri.treatment_response.stable_disease.mri.treatment_response,mri.treatment_response.stable_disease,mri.treatment_response,is_a,mri,1.0,true,V0 hierarchy relation.
+observed_from.mri.treatment_response.stable_disease.provenance.source.structured_field,mri.treatment_response.stable_disease,provenance.source.structured_field,observed_from,mri,1.0,true,V0 observed-from structured field example.
+conflicts_with.risk.benign_likely.risk.highly_suspicious,risk.benign_likely,risk.highly_suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.benign_likely.risk.known_malignancy,risk.benign_likely,risk.known_malignancy,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.benign_likely.risk.probably_benign,risk.benign_likely,risk.probably_benign,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.benign_likely.risk.suspicious,risk.benign_likely,risk.suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+is_a.risk.benign_likely.risk,risk.benign_likely,risk,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.risk.benign_likely.provenance.source.structured_field,risk.benign_likely,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+risk_order.risk.benign_likely.risk.probably_benign,risk.benign_likely,risk.probably_benign,risk_order,all,1.0,true,V0 ordered risk vocabulary.
+conflicts_with.risk.highly_suspicious.risk.benign_likely,risk.highly_suspicious,risk.benign_likely,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.risk.highly_suspicious.risk.known_malignancy,risk.highly_suspicious,risk.known_malignancy,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.highly_suspicious.risk.probably_benign,risk.highly_suspicious,risk.probably_benign,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.risk.highly_suspicious.risk.suspicious,risk.highly_suspicious,risk.suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+is_a.risk.highly_suspicious.risk,risk.highly_suspicious,risk,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.risk.highly_suspicious.provenance.source.structured_field,risk.highly_suspicious,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+risk_order.risk.highly_suspicious.risk.known_malignancy,risk.highly_suspicious,risk.known_malignancy,risk_order,all,1.0,true,V0 ordered risk vocabulary.
+conflicts_with.risk.known_malignancy.risk.benign_likely,risk.known_malignancy,risk.benign_likely,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.risk.known_malignancy.risk.highly_suspicious,risk.known_malignancy,risk.highly_suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.risk.known_malignancy.risk.probably_benign,risk.known_malignancy,risk.probably_benign,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.risk.known_malignancy.risk.suspicious,risk.known_malignancy,risk.suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+is_a.risk.known_malignancy.risk,risk.known_malignancy,risk,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.risk.known_malignancy.provenance.source.structured_field,risk.known_malignancy,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+conflicts_with.risk.probably_benign.risk.benign_likely,risk.probably_benign,risk.benign_likely,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.risk.probably_benign.risk.highly_suspicious,risk.probably_benign,risk.highly_suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.probably_benign.risk.known_malignancy,risk.probably_benign,risk.known_malignancy,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.probably_benign.risk.suspicious,risk.probably_benign,risk.suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+is_a.risk.probably_benign.risk,risk.probably_benign,risk,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.risk.probably_benign.provenance.source.structured_field,risk.probably_benign,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+risk_order.risk.probably_benign.risk.suspicious,risk.probably_benign,risk.suspicious,risk_order,all,1.0,true,V0 ordered risk vocabulary.
+conflicts_with.risk.suspicious.risk.benign_likely,risk.suspicious,risk.benign_likely,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+conflicts_with.risk.suspicious.risk.highly_suspicious,risk.suspicious,risk.highly_suspicious,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.suspicious.risk.known_malignancy,risk.suspicious,risk.known_malignancy,conflicts_with,all,1.0,true,V0 mutually exclusive attribute/risk axis.
+conflicts_with.risk.suspicious.risk.probably_benign,risk.suspicious,risk.probably_benign,conflicts_with,all,1.0,true,V0 mutually exclusive relation; symmetric direction.
+is_a.risk.suspicious.risk,risk.suspicious,risk,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.risk.suspicious.provenance.source.structured_field,risk.suspicious,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+risk_order.risk.suspicious.risk.highly_suspicious,risk.suspicious,risk.highly_suspicious,risk_order,all,1.0,true,V0 ordered risk vocabulary.
+is_a.shared.finding.shared,shared.finding,shared,is_a,all,1.0,true,V0 hierarchy relation.
+is_a.shared.finding.mass.shared.finding,shared.finding.mass,shared.finding,is_a,all,1.0,true,V0 hierarchy relation.
+observed_from.shared.finding.mass.provenance.source.structured_field,shared.finding.mass,provenance.source.structured_field,observed_from,all,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.modality.ultrasound,ultrasound,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+applies_to_modality.ultrasound.echo_pattern.modality.ultrasound,ultrasound.echo_pattern,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.echo_pattern.ultrasound,ultrasound.echo_pattern,ultrasound,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.ultrasound.echo_pattern.anechoic.modality.ultrasound,ultrasound.echo_pattern.anechoic,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.echo_pattern.anechoic.ultrasound.echo_pattern,ultrasound.echo_pattern.anechoic,ultrasound.echo_pattern,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.echo_pattern.anechoic.provenance.source.structured_field,ultrasound.echo_pattern.anechoic,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.echo_pattern.complex.modality.ultrasound,ultrasound.echo_pattern.complex,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.echo_pattern.complex.ultrasound.echo_pattern,ultrasound.echo_pattern.complex,ultrasound.echo_pattern,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.echo_pattern.complex.provenance.source.structured_field,ultrasound.echo_pattern.complex,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.echo_pattern.heterogeneous.modality.ultrasound,ultrasound.echo_pattern.heterogeneous,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.echo_pattern.heterogeneous.ultrasound.echo_pattern,ultrasound.echo_pattern.heterogeneous,ultrasound.echo_pattern,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.echo_pattern.heterogeneous.provenance.source.structured_field,ultrasound.echo_pattern.heterogeneous,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.echo_pattern.hyperechoic.modality.ultrasound,ultrasound.echo_pattern.hyperechoic,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.echo_pattern.hyperechoic.ultrasound.echo_pattern,ultrasound.echo_pattern.hyperechoic,ultrasound.echo_pattern,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.echo_pattern.hyperechoic.provenance.source.structured_field,ultrasound.echo_pattern.hyperechoic,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.echo_pattern.hypoechoic.modality.ultrasound,ultrasound.echo_pattern.hypoechoic,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.echo_pattern.hypoechoic.ultrasound.echo_pattern,ultrasound.echo_pattern.hypoechoic,ultrasound.echo_pattern,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.echo_pattern.hypoechoic.provenance.source.structured_field,ultrasound.echo_pattern.hypoechoic,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.echo_pattern.isoechoic.modality.ultrasound,ultrasound.echo_pattern.isoechoic,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.echo_pattern.isoechoic.ultrasound.echo_pattern,ultrasound.echo_pattern.isoechoic,ultrasound.echo_pattern,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.echo_pattern.isoechoic.provenance.source.structured_field,ultrasound.echo_pattern.isoechoic,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.finding.modality.ultrasound,ultrasound.finding,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.finding.ultrasound,ultrasound.finding,ultrasound,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.ultrasound.finding.abscess_or_inflammatory_change.modality.ultrasound,ultrasound.finding.abscess_or_inflammatory_change,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.finding.abscess_or_inflammatory_change.ultrasound.finding,ultrasound.finding.abscess_or_inflammatory_change,ultrasound.finding,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.finding.abscess_or_inflammatory_change.provenance.source.structured_field,ultrasound.finding.abscess_or_inflammatory_change,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.finding.complex_cystic_solid_lesion.modality.ultrasound,ultrasound.finding.complex_cystic_solid_lesion,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.finding.complex_cystic_solid_lesion.ultrasound.finding,ultrasound.finding.complex_cystic_solid_lesion,ultrasound.finding,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.finding.complex_cystic_solid_lesion.provenance.source.structured_field,ultrasound.finding.complex_cystic_solid_lesion,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.finding.cyst.modality.ultrasound,ultrasound.finding.cyst,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.finding.cyst.ultrasound.finding,ultrasound.finding.cyst,ultrasound.finding,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.finding.cyst.provenance.source.structured_field,ultrasound.finding.cyst,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.finding.lymph_node.modality.ultrasound,ultrasound.finding.lymph_node,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.finding.lymph_node.ultrasound.finding,ultrasound.finding.lymph_node,ultrasound.finding,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.finding.lymph_node.provenance.source.structured_field,ultrasound.finding.lymph_node,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.finding.mass.modality.ultrasound,ultrasound.finding.mass,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+conflicts_with.ultrasound.finding.mass.ultrasound.finding.no_lesion,ultrasound.finding.mass,ultrasound.finding.no_lesion,conflicts_with,ultrasound,1.0,true,V0 mutually exclusive relation; symmetric direction.
+has_attribute.ultrasound.finding.mass.ultrasound.echo_pattern.anechoic,ultrasound.finding.mass,ultrasound.echo_pattern.anechoic,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.echo_pattern.complex,ultrasound.finding.mass,ultrasound.echo_pattern.complex,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.echo_pattern.heterogeneous,ultrasound.finding.mass,ultrasound.echo_pattern.heterogeneous,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.echo_pattern.hyperechoic,ultrasound.finding.mass,ultrasound.echo_pattern.hyperechoic,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.echo_pattern.hypoechoic,ultrasound.finding.mass,ultrasound.echo_pattern.hypoechoic,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.echo_pattern.isoechoic,ultrasound.finding.mass,ultrasound.echo_pattern.isoechoic,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.margin.angular,ultrasound.finding.mass,ultrasound.margin.angular,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.margin.circumscribed,ultrasound.finding.mass,ultrasound.margin.circumscribed,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.margin.indistinct,ultrasound.finding.mass,ultrasound.margin.indistinct,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.margin.microlobulated,ultrasound.finding.mass,ultrasound.margin.microlobulated,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.margin.spiculated,ultrasound.finding.mass,ultrasound.margin.spiculated,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.orientation.not_parallel,ultrasound.finding.mass,ultrasound.orientation.not_parallel,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.orientation.parallel,ultrasound.finding.mass,ultrasound.orientation.parallel,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.posterior_feature.combined,ultrasound.finding.mass,ultrasound.posterior_feature.combined,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.posterior_feature.enhancement,ultrasound.finding.mass,ultrasound.posterior_feature.enhancement,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.posterior_feature.none,ultrasound.finding.mass,ultrasound.posterior_feature.none,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.posterior_feature.shadowing,ultrasound.finding.mass,ultrasound.posterior_feature.shadowing,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.shape.irregular,ultrasound.finding.mass,ultrasound.shape.irregular,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.shape.oval,ultrasound.finding.mass,ultrasound.shape.oval,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.shape.round,ultrasound.finding.mass,ultrasound.shape.round,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.vascularity.absent,ultrasound.finding.mass,ultrasound.vascularity.absent,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.vascularity.increased,ultrasound.finding.mass,ultrasound.vascularity.increased,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.vascularity.internal,ultrasound.finding.mass,ultrasound.vascularity.internal,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+has_attribute.ultrasound.finding.mass.ultrasound.vascularity.rim,ultrasound.finding.mass,ultrasound.vascularity.rim,has_attribute,ultrasound,1.0,true,V0 finding attribute relation.
+is_a.ultrasound.finding.mass.ultrasound.finding,ultrasound.finding.mass,ultrasound.finding,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+maps_to_shared_concept.ultrasound.finding.mass.shared.finding.mass,ultrasound.finding.mass,shared.finding.mass,maps_to_shared_concept,ultrasound,1.0,true,V0 shared mass relation.
+observed_from.ultrasound.finding.mass.provenance.source.structured_field,ultrasound.finding.mass,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.finding.no_lesion.modality.ultrasound,ultrasound.finding.no_lesion,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+conflicts_with.ultrasound.finding.no_lesion.ultrasound.finding.mass,ultrasound.finding.no_lesion,ultrasound.finding.mass,conflicts_with,ultrasound,1.0,true,V0 mutually exclusive attribute/risk axis.
+is_a.ultrasound.finding.no_lesion.ultrasound.finding,ultrasound.finding.no_lesion,ultrasound.finding,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.finding.no_lesion.provenance.source.structured_field,ultrasound.finding.no_lesion,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.finding.solid_lesion.modality.ultrasound,ultrasound.finding.solid_lesion,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.finding.solid_lesion.ultrasound.finding,ultrasound.finding.solid_lesion,ultrasound.finding,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.finding.solid_lesion.provenance.source.structured_field,ultrasound.finding.solid_lesion,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.margin.modality.ultrasound,ultrasound.margin,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.margin.ultrasound,ultrasound.margin,ultrasound,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.ultrasound.margin.angular.modality.ultrasound,ultrasound.margin.angular,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.margin.angular.ultrasound.margin,ultrasound.margin.angular,ultrasound.margin,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.margin.angular.provenance.source.structured_field,ultrasound.margin.angular,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.margin.circumscribed.modality.ultrasound,ultrasound.margin.circumscribed,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.margin.circumscribed.ultrasound.margin,ultrasound.margin.circumscribed,ultrasound.margin,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.margin.circumscribed.provenance.source.structured_field,ultrasound.margin.circumscribed,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.margin.indistinct.modality.ultrasound,ultrasound.margin.indistinct,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.margin.indistinct.ultrasound.margin,ultrasound.margin.indistinct,ultrasound.margin,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.margin.indistinct.provenance.source.structured_field,ultrasound.margin.indistinct,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.margin.microlobulated.modality.ultrasound,ultrasound.margin.microlobulated,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.margin.microlobulated.ultrasound.margin,ultrasound.margin.microlobulated,ultrasound.margin,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.margin.microlobulated.provenance.source.structured_field,ultrasound.margin.microlobulated,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.margin.spiculated.modality.ultrasound,ultrasound.margin.spiculated,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.margin.spiculated.ultrasound.margin,ultrasound.margin.spiculated,ultrasound.margin,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.margin.spiculated.provenance.source.structured_field,ultrasound.margin.spiculated,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.orientation.modality.ultrasound,ultrasound.orientation,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.orientation.ultrasound,ultrasound.orientation,ultrasound,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.ultrasound.orientation.not_parallel.modality.ultrasound,ultrasound.orientation.not_parallel,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+conflicts_with.ultrasound.orientation.not_parallel.ultrasound.orientation.parallel,ultrasound.orientation.not_parallel,ultrasound.orientation.parallel,conflicts_with,ultrasound,1.0,true,V0 mutually exclusive relation; symmetric direction.
+is_a.ultrasound.orientation.not_parallel.ultrasound.orientation,ultrasound.orientation.not_parallel,ultrasound.orientation,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.orientation.not_parallel.provenance.source.structured_field,ultrasound.orientation.not_parallel,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.orientation.parallel.modality.ultrasound,ultrasound.orientation.parallel,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+conflicts_with.ultrasound.orientation.parallel.ultrasound.orientation.not_parallel,ultrasound.orientation.parallel,ultrasound.orientation.not_parallel,conflicts_with,ultrasound,1.0,true,V0 mutually exclusive attribute/risk axis.
+is_a.ultrasound.orientation.parallel.ultrasound.orientation,ultrasound.orientation.parallel,ultrasound.orientation,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.orientation.parallel.provenance.source.structured_field,ultrasound.orientation.parallel,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.posterior_feature.modality.ultrasound,ultrasound.posterior_feature,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.posterior_feature.ultrasound,ultrasound.posterior_feature,ultrasound,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.ultrasound.posterior_feature.combined.modality.ultrasound,ultrasound.posterior_feature.combined,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.posterior_feature.combined.ultrasound.posterior_feature,ultrasound.posterior_feature.combined,ultrasound.posterior_feature,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.posterior_feature.combined.provenance.source.structured_field,ultrasound.posterior_feature.combined,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.posterior_feature.enhancement.modality.ultrasound,ultrasound.posterior_feature.enhancement,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.posterior_feature.enhancement.ultrasound.posterior_feature,ultrasound.posterior_feature.enhancement,ultrasound.posterior_feature,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.posterior_feature.enhancement.provenance.source.structured_field,ultrasound.posterior_feature.enhancement,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.posterior_feature.none.modality.ultrasound,ultrasound.posterior_feature.none,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.posterior_feature.none.ultrasound.posterior_feature,ultrasound.posterior_feature.none,ultrasound.posterior_feature,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.posterior_feature.none.provenance.source.structured_field,ultrasound.posterior_feature.none,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.posterior_feature.shadowing.modality.ultrasound,ultrasound.posterior_feature.shadowing,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.posterior_feature.shadowing.ultrasound.posterior_feature,ultrasound.posterior_feature.shadowing,ultrasound.posterior_feature,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.posterior_feature.shadowing.provenance.source.structured_field,ultrasound.posterior_feature.shadowing,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.shape.modality.ultrasound,ultrasound.shape,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.shape.ultrasound,ultrasound.shape,ultrasound,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.ultrasound.shape.irregular.modality.ultrasound,ultrasound.shape.irregular,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.shape.irregular.ultrasound.shape,ultrasound.shape.irregular,ultrasound.shape,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.shape.irregular.provenance.source.structured_field,ultrasound.shape.irregular,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.shape.oval.modality.ultrasound,ultrasound.shape.oval,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+implies.ultrasound.shape.oval.risk.probably_benign,ultrasound.shape.oval,risk.probably_benign,implies,ultrasound,1.0,true,V0 explicit compatible-with example.
+is_a.ultrasound.shape.oval.ultrasound.shape,ultrasound.shape.oval,ultrasound.shape,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.shape.oval.provenance.source.structured_field,ultrasound.shape.oval,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.shape.round.modality.ultrasound,ultrasound.shape.round,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.shape.round.ultrasound.shape,ultrasound.shape.round,ultrasound.shape,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.shape.round.provenance.source.structured_field,ultrasound.shape.round,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.vascularity.modality.ultrasound,ultrasound.vascularity,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.vascularity.ultrasound,ultrasound.vascularity,ultrasound,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+applies_to_modality.ultrasound.vascularity.absent.modality.ultrasound,ultrasound.vascularity.absent,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.vascularity.absent.ultrasound.vascularity,ultrasound.vascularity.absent,ultrasound.vascularity,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.vascularity.absent.provenance.source.structured_field,ultrasound.vascularity.absent,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.vascularity.increased.modality.ultrasound,ultrasound.vascularity.increased,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.vascularity.increased.ultrasound.vascularity,ultrasound.vascularity.increased,ultrasound.vascularity,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.vascularity.increased.provenance.source.structured_field,ultrasound.vascularity.increased,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.vascularity.internal.modality.ultrasound,ultrasound.vascularity.internal,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.vascularity.internal.ultrasound.vascularity,ultrasound.vascularity.internal,ultrasound.vascularity,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.vascularity.internal.provenance.source.structured_field,ultrasound.vascularity.internal,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.
+applies_to_modality.ultrasound.vascularity.rim.modality.ultrasound,ultrasound.vascularity.rim,modality.ultrasound,applies_to_modality,ultrasound,1.0,true,V0 modality applicability.
+is_a.ultrasound.vascularity.rim.ultrasound.vascularity,ultrasound.vascularity.rim,ultrasound.vascularity,is_a,ultrasound,1.0,true,V0 hierarchy relation.
+observed_from.ultrasound.vascularity.rim.provenance.source.structured_field,ultrasound.vascularity.rim,provenance.source.structured_field,observed_from,ultrasound,1.0,true,V0 observed-from structured field example.

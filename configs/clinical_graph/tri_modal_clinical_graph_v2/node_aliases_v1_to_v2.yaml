@@ -1,0 +1,814 @@
+schema_version: clinical_graph_v2
+aliases:
+- v1_node_id: modality
+  migration_status: exact
+  v2_node_ids:
+  - modality
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: laterality
+  migration_status: renamed
+  v2_node_ids:
+  - anatomy_location.laterality
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: laterality.left
+  migration_status: renamed
+  v2_node_ids:
+  - anatomy_location.laterality.left
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: laterality.right
+  migration_status: renamed
+  v2_node_ids:
+  - anatomy_location.laterality.right
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: laterality.bilateral
+  migration_status: renamed
+  v2_node_ids:
+  - anatomy_location.laterality.bilateral
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: lesion
+  migration_status: renamed
+  v2_node_ids:
+  - finding_type
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mass
+  migration_status: renamed
+  v2_node_ids:
+  - shared.finding.mass
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: benign_malignant
+  migration_status: renamed
+  v2_node_ids:
+  - risk
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: benign_malignant.benign
+  migration_status: renamed
+  v2_node_ids:
+  - risk.benign_likely
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: non_equivalent
+  information_loss_risk: high
+  required_source_scope: pathology_record
+  manual_review_note: 'Not semantic identity: retain pathology, risk, assessment and
+    outcome source semantics.'
+- v1_node_id: benign_malignant.malignant
+  migration_status: renamed
+  v2_node_ids:
+  - risk.known_malignancy
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: non_equivalent
+  information_loss_risk: high
+  required_source_scope: pathology_record
+  manual_review_note: 'Not semantic identity: retain pathology, risk, assessment and
+    outcome source semantics.'
+- v1_node_id: risk_suspiciousness
+  migration_status: renamed
+  v2_node_ids:
+  - risk
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: non_equivalent
+  information_loss_risk: high
+  required_source_scope: any
+  manual_review_note: 'Not semantic identity: retain pathology, risk, assessment and
+    outcome source semantics.'
+- v1_node_id: assessment
+  migration_status: renamed
+  v2_node_ids:
+  - assessment_risk
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: pathology_outcome
+  migration_status: renamed
+  v2_node_ids:
+  - recommendation_outcome
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: non_equivalent
+  information_loss_risk: high
+  required_source_scope: pathology_record
+  manual_review_note: 'Not semantic identity: retain pathology, risk, assessment and
+    outcome source semantics.'
+- v1_node_id: breast_density
+  migration_status: renamed
+  v2_node_ids:
+  - mammography.density
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: treatment_response
+  migration_status: renamed
+  v2_node_ids:
+  - mri.treatment_response
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: anatomical_location
+  migration_status: renamed
+  v2_node_ids:
+  - anatomy_location
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.view.cc
+  migration_status: exact
+  v2_node_ids:
+  - mammography.view.cc
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mammography.view.mlo
+  migration_status: exact
+  v2_node_ids:
+  - mammography.view.mlo
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mammography.density.a
+  migration_status: renamed
+  v2_node_ids:
+  - mammography.density.a_almost_entirely_fatty
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.density.b
+  migration_status: renamed
+  v2_node_ids:
+  - mammography.density.b_scattered_fibroglandular
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.density.c
+  migration_status: renamed
+  v2_node_ids:
+  - mammography.density.c_heterogeneously_dense
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.density.d
+  migration_status: renamed
+  v2_node_ids:
+  - mammography.density.d_extremely_dense
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.finding.mass
+  migration_status: exact
+  v2_node_ids:
+  - mammography.finding.mass
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mammography.finding.calcification
+  migration_status: exact
+  v2_node_ids:
+  - mammography.finding.calcification
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mammography.finding.asymmetry
+  migration_status: exact
+  v2_node_ids:
+  - mammography.finding.asymmetry
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mammography.finding.architectural_distortion
+  migration_status: exact
+  v2_node_ids:
+  - mammography.finding.architectural_distortion
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mammography.assessment.birads_0
+  migration_status: renamed
+  v2_node_ids:
+  - assessment.birads.0_incomplete
+  migration_requires_evidence: true
+  note: V1 mammography namespace renamed to V0 shared assessment namespace; retain
+    modality evidence.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.assessment.birads_1
+  migration_status: renamed
+  v2_node_ids:
+  - assessment.birads.1_negative
+  migration_requires_evidence: true
+  note: V1 mammography namespace renamed to V0 shared assessment namespace; retain
+    modality evidence.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.assessment.birads_2
+  migration_status: renamed
+  v2_node_ids:
+  - assessment.birads.2_benign
+  migration_requires_evidence: true
+  note: V1 mammography namespace renamed to V0 shared assessment namespace; retain
+    modality evidence.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.assessment.birads_3
+  migration_status: renamed
+  v2_node_ids:
+  - assessment.birads.3_probably_benign
+  migration_requires_evidence: true
+  note: V1 mammography namespace renamed to V0 shared assessment namespace; retain
+    modality evidence.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.assessment.birads_4
+  migration_status: renamed
+  v2_node_ids:
+  - assessment.birads.4_suspicious
+  migration_requires_evidence: true
+  note: V1 mammography namespace renamed to V0 shared assessment namespace; retain
+    modality evidence.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.assessment.birads_5
+  migration_status: renamed
+  v2_node_ids:
+  - assessment.birads.5_highly_suggestive_malignancy
+  migration_requires_evidence: true
+  note: V1 mammography namespace renamed to V0 shared assessment namespace; retain
+    modality evidence.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mammography.assessment.birads_6
+  migration_status: renamed
+  v2_node_ids:
+  - assessment.birads.6_known_biopsy_proven_malignancy
+  migration_requires_evidence: true
+  note: V1 mammography namespace renamed to V0 shared assessment namespace; retain
+    modality evidence.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.sequence.dce
+  migration_status: exact
+  v2_node_ids:
+  - mri.sequence.dce
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.sequence.t1
+  migration_status: exact
+  v2_node_ids:
+  - mri.sequence.t1
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.sequence.t2
+  migration_status: exact
+  v2_node_ids:
+  - mri.sequence.t2
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.sequence.dwi
+  migration_status: exact
+  v2_node_ids:
+  - mri.sequence.dwi
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.sequence.adc
+  migration_status: exact
+  v2_node_ids:
+  - mri.sequence.adc
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.enhancement.mass
+  migration_status: renamed
+  v2_node_ids:
+  - mri.finding.mass
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.enhancement.non_mass
+  migration_status: renamed
+  v2_node_ids:
+  - mri.finding.non_mass_enhancement
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.kinetic_curve.persistent
+  migration_status: renamed
+  v2_node_ids:
+  - mri.kinetic.delayed.persistent
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.kinetic_curve.plateau
+  migration_status: renamed
+  v2_node_ids:
+  - mri.kinetic.delayed.plateau
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.kinetic_curve.washout
+  migration_status: renamed
+  v2_node_ids:
+  - mri.kinetic.delayed.washout
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.treatment_response.complete_response
+  migration_status: exact
+  v2_node_ids:
+  - mri.treatment_response.complete_response
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.treatment_response.partial_response
+  migration_status: exact
+  v2_node_ids:
+  - mri.treatment_response.partial_response
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.treatment_response.stable_disease
+  migration_status: exact
+  v2_node_ids:
+  - mri.treatment_response.stable_disease
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.treatment_response.progressive_disease
+  migration_status: exact
+  v2_node_ids:
+  - mri.treatment_response.progressive_disease
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: mri.treatment_response.residual_disease
+  migration_status: renamed
+  v2_node_ids:
+  - mri.treatment_response.residual_enhancing_disease
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.radiomics.available
+  migration_status: engineering_only
+  v2_node_ids:
+  - engineering.radiomics.available
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.radiomics.texture
+  migration_status: engineering_only
+  v2_node_ids:
+  - engineering.radiomics.available
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.radiomics.shape
+  migration_status: engineering_only
+  v2_node_ids:
+  - engineering.radiomics.available
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: mri.radiomics.intensity
+  migration_status: engineering_only
+  v2_node_ids:
+  - engineering.radiomics.available
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: ultrasound.finding.mass
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.finding.mass
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.echogenicity.anechoic
+  migration_status: renamed
+  v2_node_ids:
+  - ultrasound.echo_pattern.anechoic
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: ultrasound.echogenicity.hypoechoic
+  migration_status: renamed
+  v2_node_ids:
+  - ultrasound.echo_pattern.hypoechoic
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: ultrasound.echogenicity.isoechoic
+  migration_status: renamed
+  v2_node_ids:
+  - ultrasound.echo_pattern.isoechoic
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: ultrasound.echogenicity.hyperechoic
+  migration_status: renamed
+  v2_node_ids:
+  - ultrasound.echo_pattern.hyperechoic
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: ultrasound.margin.circumscribed
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.margin.circumscribed
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.margin.not_circumscribed
+  migration_status: split
+  v2_node_ids:
+  - ultrasound.margin.indistinct
+  - ultrasound.margin.angular
+  - ultrasound.margin.microlobulated
+  - ultrasound.margin.spiculated
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: broader
+  information_loss_risk: high
+  required_source_scope: lesion
+  manual_review_note: Umbrella margin cannot be collapsed to indistinct; resolve V0
+    subclass from raw evidence.
+- v1_node_id: ultrasound.shape.oval
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.shape.oval
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.shape.round
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.shape.round
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.shape.irregular
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.shape.irregular
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.orientation.parallel
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.orientation.parallel
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.orientation.not_parallel
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.orientation.not_parallel
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.posterior_feature.enhancement
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.posterior_feature.enhancement
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.posterior_feature.shadowing
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.posterior_feature.shadowing
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.posterior_feature.none
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.posterior_feature.none
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.vascularity.present
+  migration_status: split
+  v2_node_ids:
+  - ultrasound.vascularity.internal
+  - ultrasound.vascularity.rim
+  - ultrasound.vascularity.increased
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: ultrasound.vascularity.absent
+  migration_status: exact
+  v2_node_ids:
+  - ultrasound.vascularity.absent
+  migration_requires_evidence: false
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: exact
+  information_loss_risk: none
+  required_source_scope: any
+  manual_review_note: Exact semantic identity.
+- v1_node_id: ultrasound.mask.available
+  migration_status: engineering_only
+  v2_node_ids:
+  - engineering.mask.available
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: ultrasound.bbox.available
+  migration_status: engineering_only
+  v2_node_ids:
+  - engineering.bbox.available
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: finding.no_finding
+  migration_status: split
+  v2_node_ids:
+  - mammography.finding.no_suspicious_finding
+  - ultrasound.finding.no_lesion
+  - mri.finding.no_suspicious_enhancement
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: label.source
+  migration_status: engineering_only
+  v2_node_ids:
+  - provenance.label.source
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: label.confidence
+  migration_status: engineering_only
+  v2_node_ids:
+  - provenance.label.confidence
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.
+- v1_node_id: label.status
+  migration_status: engineering_only
+  v2_node_ids:
+  - provenance.label.status
+  migration_requires_evidence: true
+  note: V0-compatible migration; raw evidence is required unless exact.
+  semantic_equivalence: overlapping
+  information_loss_risk: medium
+  required_source_scope: any
+  manual_review_note: Retain raw evidence and resolve modality/clinical semantics
+    before migration.

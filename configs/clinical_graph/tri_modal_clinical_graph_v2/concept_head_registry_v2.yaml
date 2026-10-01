@@ -1,0 +1,57 @@
+schema_version: clinical_graph_v2
+formal_heads_enabled: false
+bindings:
+- axis_id: mammography_birads
+  modality: mammography
+  node_ids:
+  - assessment.birads.0_incomplete
+  - assessment.birads.4_suspicious
+  - assessment.birads.3_probably_benign
+  - assessment.birads.6_known_biopsy_proven_malignancy
+  - assessment.birads.1_negative
+  - assessment.birads.5_highly_suggestive_malignancy
+  - assessment.birads.2_benign
+  mutually_exclusive: true
+  multi_label: false
+  allowed_source_scopes:
+  - image
+  - lesion
+  - study
+  - case
+  minimum_class_count_policy: future_coverage_gate
+  future_trainer_head_key: mammography_birads
+  runtime_enabled_default: false
+- axis_id: ultrasound_birads
+  modality: ultrasound
+  node_ids:
+  - assessment.birads_us.2_benign
+  - assessment.birads_us.5_highly_suggestive_malignancy
+  - assessment.birads_us.6_known_malignancy
+  - assessment.birads_us.1_negative
+  - assessment.birads_us.3_probably_benign
+  - assessment.birads_us.4_suspicious
+  mutually_exclusive: true
+  multi_label: false
+  allowed_source_scopes:
+  - image
+  - lesion
+  - study
+  - case
+  minimum_class_count_policy: future_coverage_gate
+  future_trainer_head_key: ultrasound_birads
+  runtime_enabled_default: false
+- axis_id: mri_kinetic_delayed
+  modality: mri
+  node_ids:
+  - mri.kinetic.delayed.washout
+  - mri.kinetic.delayed.plateau
+  - mri.kinetic.delayed.persistent
+  mutually_exclusive: true
+  multi_label: false
+  allowed_source_scopes:
+  - series
+  - study
+  - case
+  minimum_class_count_policy: future_coverage_gate
+  future_trainer_head_key: mri_kinetic_delayed
+  runtime_enabled_default: false

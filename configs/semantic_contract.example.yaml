@@ -1,0 +1,3 @@
+schema_version: public_example_v1
+description: Replace with the frozen semantic contract receipt supplied for a run.
+effective_report_sha256: REQUIRED_FROM_FROZEN_AUTHORITY

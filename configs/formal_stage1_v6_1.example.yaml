@@ -1,0 +1,193 @@
+# Public example only. Replace every placeholder with paths and receipts from
+# a frozen Stage 1 bundle before launching formal training.
+run_tier: formal_production
+entry_contract_version: v6
+strict_formal_config: true
+model_role: V6.1 single-stage tri-modal masked-semantic joint pretraining
+compliance_status: requires_frozen_bundle_and_authorization
+project_root: ..
+formal_bundle_root: ./path/to/frozen_stage1_bundle
+formal_backbone_weight_path: ./path/to/backbone_weights.pt
+image_manifest_path: ./path/to/frozen_stage1_manifest.csv
+text_prompt_path: ./path/to/effective_report_prompts.jsonl
+image_size: [912, 1520]
+image_size_by_modality:
+  mammography: [912, 1520]
+  mri: [512, 512]
+  ultrasound: [512, 512]
+transform_policy_by_modality:
+  mammography: aspect_ratio_preserving_resize_pad
+  mri: direct_resize
+  ultrasound: direct_resize
+batch_size: 2
+batch_policy: bucket_by_modality_and_image_size
+batch_size_by_modality:
+  mammography: 1
+  mri: 4
+  ultrasound: 4
+num_workers: 4
+device: cuda
+output_dir: ./outputs/formal_stage1
+max_samples: null
+require_attention_prior_paths: true
+require_teacher_latents: false
+gaze_membership_path: ./path/to/frozen_gaze_membership.csv
+# These values must come from the supplied membership authority. There is no
+# project-specific public default.
+gaze_membership_expected_available: null
+gaze_membership_expected_disabled: null
+sampler_contract_version: formal_bucketed_sampler_v2
+
+model:
+  vision_encoder_name: mammo_fm_timm_efficientnet_b5
+  pretrained_weight_path: ./path/to/backbone_weights.pt
+  allow_missing_pretrained_fallback: false
+  freeze_backbone: false
+  output_patch_dim: 768
+  patch_size: 16
+  latent_dim: 768
+  text_dim: 512
+  align_dim: 256
+  modality_embedding: true
+  modality_vocab: [mammography, mri, ultrasound]
+
+masking:
+  gaze_loss_mode: soft_attention_plus_high_conf
+  mask_strategy: adaptive_gaze_masking
+  mask_ratio: 0.4
+  gaze_mask_sampling_alpha: 0.5
+  high_conf_mask_quota: 0.6
+  min_random_mask_fraction: 0.3
+  min_visible_salient_fraction: 0.25
+  mask_sampling_temperature: 1.0
+  gaze_mask_eps: 1.0e-6
+
+semantic:
+  text_backend: prompt_embedding_cache
+  prompt_embedding_path: ./path/to/frozen_prompt_embeddings.json
+  text_encoder:
+    backend: open_clip_biomedclip
+    name: YOUR_TEXT_ENCODER_NAME
+    checkpoint_path: ./path/to/text_encoder
+    tokenizer_path: ./path/to/text_tokenizer
+    pooling: cls_last_hidden_state_pooler
+    normalization: l2
+  semantic_soft_label_format: sparse_topk
+  semantic_soft_label_path: ./path/to/semantic_soft_labels_topk.npz
+  semantic_soft_label_topk_path: ./path/to/semantic_soft_labels_topk.npz
+  semantic_manifest_path: ./path/to/semantic_soft_label_manifest.csv
+  semantic_unit_mapping_path: ./path/to/image_to_semantic_unit.csv
+  semantic_unit_topk_path: ./path/to/semantic_unit_soft_labels_topk.npz
+  semantic_unit_source_root: ./path/to/semantic_units
+  semantic_unit_schema_version: stage1_semantic_unit_bounded_retrieval_v1
+  semantic_unit_binding_version: stage1_semantic_unit_binding_v1
+  birads_prior_manifest_path: ./path/to/birads_prior_manifest.csv
+  high_conf_weight_alpha: 1.0
+  reconstruction_teacher_source: self_masked_reconstruction
+  text_runtime:
+    allow_structured_prompt_fallback: false
+    require_effective_report: true
+    reject_legacy_prompt_cache_without_receipt: true
+  active_concept_heads: []
+  pending_concept_heads: []
+
+losses:
+  reconstruction_weight: 1.0
+  global_align_weight: 1.0
+  visible_align_weight: 1.0
+  semantic_soft_weight: 1.0
+  concept_loss_weight: 1.0
+  concept_consistency_weight: 0.1
+  graph_consistency_weight: 0.1
+  concept_head_weights: {}
+  concept_consistency_head_weights: {}
+  conflict_aware:
+    enabled: true
+    semantic_visible_coverage_target: 0.25
+    reconstruction_masked_gaze_target: 0.25
+    min_weight: 0.5
+    max_weight: 2.0
+    warmup_steps: 0
+    allow_dynamic_graph_consistency_weighting: false
+
+train:
+  optimizer: adamw
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  max_steps: 100000
+  grad_clip_norm: 1.0
+  use_amp: true
+
+eval:
+  enabled: true
+  every_n_steps: 1000
+  every_n_epochs: null
+  attention_top_fraction: 0.2
+
+checkpoint:
+  save_every_n_steps: 1000
+  save_every_n_epochs: null
+  save_last: true
+  save_best: false
+  monitor: loss_total
+  mode: min
+  resume_from: null
+
+reproducibility:
+  seed: 0
+  deterministic_ablation: false
+  reuse_initial_model: false
+  reuse_patch_mask: false
+
+references:
+  import_policy: no_runtime_external_repo_dependency
+
+clinical_graph:
+  version: tri_modal_clinical_graph_v2
+  nodes_path: ./configs/clinical_graph/tri_modal_clinical_graph_v2/breast_multimodal_nodes_v2.csv
+  edges_path: ./configs/clinical_graph/tri_modal_clinical_graph_v2/breast_multimodal_edges_v2.csv
+  mapping_rules_path: ./configs/clinical_graph/tri_modal_clinical_graph_v2/node_aliases_v1_to_v2.yaml
+  consistency_rules_path: ./configs/clinical_graph/tri_modal_clinical_graph_v2/graph_consistency_rules_v2.yaml
+  prompt_templates_path: ./configs/clinical_graph/tri_modal_clinical_graph_v2/concept_prompt_templates_v2.yaml
+  sidecar_case_concept_vector_path: ./path/to/clinical_graph_case_sidecar.jsonl
+  use_for_structured_prompt: false
+  use_for_semantic_soft_labels: true
+  use_for_concept_targets: true
+  use_for_concept_consistency: true
+  forbid_direct_graph_node_alignment: true
+
+formal_p0b:
+  concept_schema_path: ./configs/concept_schema.example.yaml
+  concept_schema_sha256: null
+  semantic_contract_path: ./configs/semantic_contract.example.yaml
+  semantic_contract_sha256: null
+  sparse_target_path: ./path/to/sparse_concept_targets.jsonl
+  concept_runtime_npz_path: ./path/to/concept_targets.npz
+  concept_runtime_manifest_path: ./path/to/concept_manifest.csv
+  prototype_asset_path: ./path/to/concept_prototypes.npz
+  semantic_soft_label_v2:
+    w_report: 0.3333333333333333
+    w_graph: 0.3333333333333333
+    w_concept: 0.3333333333333333
+  allow_legacy_fallback: false
+
+graph_encoder:
+  enabled: true
+  implementation: vendored_in_repo
+  no_runtime_external_repo_dependency: true
+  alignment_graph_text_fusion_enabled: false
+  text_fusion_weight: 0.0
+  fusion_target: [semantic_soft_labels, concept_prototypes, graph_consistency]
+  forbid_image_region_graph_node_alignment: true
+  nodes_path: ./configs/clinical_graph/tri_modal_clinical_graph_v2/breast_multimodal_nodes_v2.csv
+  edges_path: ./configs/clinical_graph/tri_modal_clinical_graph_v2/breast_multimodal_edges_v2.csv
+
+formal_authorization:
+  authorization_path: ./path/to/formal_authorization_receipt.json
+  authorization_sha256: null
+  audit_root: ./path/to/formal_audit_receipts
+
+source_intensity_audit:
+  required: true
+  approved_tolerance: 0.0001
+  audit_report_path: ./path/to/source_intensity_audit.json

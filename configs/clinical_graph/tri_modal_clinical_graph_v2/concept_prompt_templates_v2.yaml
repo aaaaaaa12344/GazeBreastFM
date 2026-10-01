@@ -1,0 +1,136 @@
+schema_version: clinical_graph_v2
+policy:
+  observed_mask_only: true
+  exclude_unobserved_nodes: true
+  deterministic: true
+templates:
+  mammography:
+    prefix: Mammography.
+    fields:
+    - label: view
+      node_ids:
+      - mammography.view.cc
+      - mammography.view.mlo
+      - mammography.view.lm
+      - mammography.view.ml
+    - label: laterality
+      node_ids:
+      - mammography.laterality.left
+      - mammography.laterality.right
+    - label: density
+      node_ids:
+      - mammography.density.a_almost_entirely_fatty
+      - mammography.density.b_scattered_fibroglandular
+      - mammography.density.c_heterogeneously_dense
+      - mammography.density.d_extremely_dense
+    - label: finding
+      node_ids:
+      - mammography.finding.architectural_distortion
+      - mammography.finding.asymmetry
+      - mammography.finding.axillary_lymph_node
+      - mammography.finding.calcification
+      - mammography.finding.developing_asymmetry
+      - mammography.finding.focal_asymmetry
+      - mammography.finding.global_asymmetry
+      - mammography.finding.mass
+      - mammography.finding.nipple_retraction
+      - mammography.finding.no_suspicious_finding
+      - mammography.finding.skin_thickening
+    - label: BI-RADS
+      node_ids:
+      - assessment.birads.0_incomplete
+      - assessment.birads.1_negative
+      - assessment.birads.2_benign
+      - assessment.birads.3_probably_benign
+      - assessment.birads.4_suspicious
+      - assessment.birads.5_highly_suggestive_malignancy
+      - assessment.birads.6_known_biopsy_proven_malignancy
+  ultrasound:
+    prefix: Breast ultrasound.
+    fields:
+    - label: finding
+      node_ids:
+      - ultrasound.finding.abscess_or_inflammatory_change
+      - ultrasound.finding.complex_cystic_solid_lesion
+      - ultrasound.finding.cyst
+      - ultrasound.finding.lymph_node
+      - ultrasound.finding.mass
+      - ultrasound.finding.no_lesion
+      - ultrasound.finding.solid_lesion
+    - label: shape
+      node_ids:
+      - ultrasound.shape.irregular
+      - ultrasound.shape.oval
+      - ultrasound.shape.round
+    - label: orientation
+      node_ids:
+      - ultrasound.orientation.not_parallel
+      - ultrasound.orientation.parallel
+    - label: margin
+      node_ids:
+      - ultrasound.margin.angular
+      - ultrasound.margin.circumscribed
+      - ultrasound.margin.indistinct
+      - ultrasound.margin.microlobulated
+      - ultrasound.margin.spiculated
+    - label: echo pattern
+      node_ids:
+      - ultrasound.echo_pattern.anechoic
+      - ultrasound.echo_pattern.complex
+      - ultrasound.echo_pattern.heterogeneous
+      - ultrasound.echo_pattern.hyperechoic
+      - ultrasound.echo_pattern.hypoechoic
+      - ultrasound.echo_pattern.isoechoic
+    - label: posterior feature
+      node_ids:
+      - ultrasound.posterior_feature.combined
+      - ultrasound.posterior_feature.enhancement
+      - ultrasound.posterior_feature.none
+      - ultrasound.posterior_feature.shadowing
+    - label: vascularity
+      node_ids:
+      - ultrasound.vascularity.absent
+      - ultrasound.vascularity.increased
+      - ultrasound.vascularity.internal
+      - ultrasound.vascularity.rim
+    - label: BI-RADS
+      node_ids:
+      - assessment.birads_us.1_negative
+      - assessment.birads_us.2_benign
+      - assessment.birads_us.3_probably_benign
+      - assessment.birads_us.4_suspicious
+      - assessment.birads_us.5_highly_suggestive_malignancy
+      - assessment.birads_us.6_known_malignancy
+  mri:
+    prefix: Breast MRI.
+    fields:
+    - label: sequence
+      node_ids:
+      - mri.sequence.adc
+      - mri.sequence.dce
+      - mri.sequence.dwi
+      - mri.sequence.post_contrast_phase_delayed
+      - mri.sequence.post_contrast_phase_early
+      - mri.sequence.subtraction
+      - mri.sequence.t1
+      - mri.sequence.t2
+    - label: finding
+      node_ids:
+      - mri.finding.bilateral_disease
+      - mri.finding.focus
+      - mri.finding.mass
+      - mri.finding.multicentric_disease
+      - mri.finding.multifocal_disease
+      - mri.finding.no_suspicious_enhancement
+      - mri.finding.non_mass_enhancement
+    - label: enhancement
+      node_ids:
+      - mri.internal_enhancement.dark_internal_septations
+      - mri.internal_enhancement.heterogeneous
+      - mri.internal_enhancement.homogeneous
+      - mri.internal_enhancement.rim
+    - label: kinetic
+      node_ids:
+      - mri.kinetic.delayed.persistent
+      - mri.kinetic.delayed.plateau
+      - mri.kinetic.delayed.washout

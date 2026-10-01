@@ -1,0 +1,130 @@
+schema_version: clinical_graph_v2
+rules:
+- rule_id: axis.0
+  rule_type: mutual_exclusion
+  node_ids:
+  - ultrasound.orientation.parallel
+  - ultrasound.orientation.not_parallel
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive axis.
+- rule_id: axis.1
+  rule_type: mutual_exclusion
+  node_ids:
+  - mri.kinetic.delayed.persistent
+  - mri.kinetic.delayed.plateau
+  - mri.kinetic.delayed.washout
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive axis.
+- rule_id: axis.2
+  rule_type: mutual_exclusion
+  node_ids:
+  - risk.benign_likely
+  - risk.probably_benign
+  - risk.suspicious
+  - risk.highly_suspicious
+  - risk.known_malignancy
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive axis.
+- rule_id: mammography_density
+  rule_type: mutual_exclusion
+  node_ids:
+  - mammography.density.a_almost_entirely_fatty
+  - mammography.density.b_scattered_fibroglandular
+  - mammography.density.c_heterogeneously_dense
+  - mammography.density.d_extremely_dense
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive reporting axis.
+- rule_id: mammography_birads
+  rule_type: mutual_exclusion
+  node_ids:
+  - assessment.birads.0_incomplete
+  - assessment.birads.1_negative
+  - assessment.birads.2_benign
+  - assessment.birads.3_probably_benign
+  - assessment.birads.4_suspicious
+  - assessment.birads.5_highly_suggestive_malignancy
+  - assessment.birads.6_known_biopsy_proven_malignancy
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive reporting axis.
+- rule_id: ultrasound_birads
+  rule_type: mutual_exclusion
+  node_ids:
+  - assessment.birads_us.1_negative
+  - assessment.birads_us.2_benign
+  - assessment.birads_us.3_probably_benign
+  - assessment.birads_us.4_suspicious
+  - assessment.birads_us.5_highly_suggestive_malignancy
+  - assessment.birads_us.6_known_malignancy
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive reporting axis.
+- rule_id: ultrasound_shape
+  rule_type: mutual_exclusion
+  node_ids:
+  - ultrasound.shape.oval
+  - ultrasound.shape.round
+  - ultrasound.shape.irregular
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive reporting axis.
+- rule_id: mri_initial_kinetic
+  rule_type: mutual_exclusion
+  node_ids:
+  - mri.kinetic.initial.slow
+  - mri.kinetic.initial.medium
+  - mri.kinetic.initial.fast
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_or_explicitly_broadcast
+  authority_basis: V0 documented mutually exclusive reporting axis.
+- rule_id: ultrasound_no_lesion_same_scope
+  rule_type: mutual_exclusion
+  node_ids:
+  - ultrasound.finding.no_lesion
+  - ultrasound.finding.mass
+  - ultrasound.finding.cyst
+  - ultrasound.finding.solid_lesion
+  - ultrasound.finding.complex_cystic_solid_lesion
+  requires_source_observed: true
+  requires_target_observed: true
+  missing_is_not_negative: true
+  penalty_weight: 1.0
+  hard_or_soft: hard
+  source_scope_policy: same_scope_only
+  authority_basis: V0 ultrasound finding taxonomy; do not compare different lesions.
